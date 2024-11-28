@@ -1,0 +1,26 @@
+Final Homewrok - Automation Testing
+
+You can choose either Selenium or Cypress to complete the following tasks:
+
+
+1.  Open https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login website
+2.  Confirm the Title of the page is XYZ Bank
+3.  Click on Customer Login
+4.  Choose any Name from the Your Name drop down
+5.  Click on Login
+6.  Write an assertion to confirm the Name selected in Step 4 is displayed after Welcome
+7.  Confirm the Currency is Dollar (Use Assertion)
+8.  Click on Deposit
+9.  Enter the amount in Amount to be Deposited textbox
+10. Click on Deposit
+11. Confirm "Deposit Successful" is displayed
+12. Click on Transactions
+13. Confirm the amount entered in Step 9 is displayed under Amount column
+14. Confirm the Transaction Type is credit
+15. Click on Back button
+16. Click on Withdrawl
+17. Enter the same amount you deposited
+18. Click on Withdraw
+19. Confirm "Transaction Successful" is displayed
+20. Click on Transactions
+21. Confirm there is one more row with Transaction Type is debit
