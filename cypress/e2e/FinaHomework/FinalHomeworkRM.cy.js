@@ -1,5 +1,5 @@
 describe('Test Suite 1', () =>{
-    beforeEach('Access Website', ()=>{
+    beforeEach('Task 1: Access Website', ()=>{
         cy.visit('https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login');
     })
     it('Task 2: Confirm the Title of the page is XYZ Bank', () =>{
@@ -16,7 +16,7 @@ describe('Test Suite 1', () =>{
         // Task 6: Write an assertion to confirm the Name selected in Step 4 is displayed after Welcome
         cy.get('.fontBig.ng-binding').should('contain','Albus');
         // Task 7: Confirm the Currency is Dollar (Use Assertion)
-        cy.get('.ng-binding').should('contain','Dollar'); // it works but unsure what the best way to do it would be
+        cy.get('strong:nth-child(3)').should('contain','Dollar');
         // Task 8: Click on Deposit
         cy.get('.btn.btn-lg.tab[ng-class="btnClass2"]').click();
         // Task 9: Enter the amount in Amount to be Deposited textbox
