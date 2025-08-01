@@ -8,10 +8,21 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "skipFiles": [
-                "<node_internals>/**"
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${workspaceFolder}\\app.js"
+          },
+        {
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
             ],
-            "program": "${workspaceFolder}\\javas.js"
+            "name": "Launch Extension",
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js"
+            ],
+            "preLaunchTask": "npm",
+            "request": "launch",
+            "type": "extensionHost"
         }
+
     ]
 }
